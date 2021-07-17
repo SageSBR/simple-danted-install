@@ -10,7 +10,6 @@ if [ "$#" -ne 1 ]; then
 fi
 
 sudo apt update
-sudo apt install dante-server -y
 wget http://archive.ubuntu.com/ubuntu/pool/universe/d/dante/dante-server_1.4.2+dfsg-2build1_amd64.deb
 sudo dpkg -i dante-server_*.deb
 sudo useradd --shell /usr/sbin/nologin proxyuser
@@ -20,7 +19,7 @@ echo "Copy config to /etc/danted.conf ..."
 echo "logoutput: syslog
 user.privileged: root
 user.unprivileged: nobody
-internal: 0.0.0.0 port = 8080
+internal: 0.0.0.0 port = 1080
 external: eth0
 socksmethod: username
 clientmethod: none
