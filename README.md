@@ -6,7 +6,7 @@ So far it's been tested on Ubuntu 16.06, but it should work on newer versions to
 Usage:
 
 ```shell
-wget https://raw.githubusercontent.com/pleszkan/simple-danted-install/master/danteinstall.sh
+wget https://raw.githubusercontent.com/SageSBR/simple-danted-install/master/danteinstall.sh
 chmod +x danteinstall.sh
 ./danteinstall.sh <password>
 ```
