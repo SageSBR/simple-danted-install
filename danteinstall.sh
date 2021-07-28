@@ -10,7 +10,7 @@ if [ "$#" -ne 1 ]; then
 fi
 
 sudo apt update
-wget http://archive.ubuntu.com/ubuntu/pool/universe/d/dante/dante-server_1.4.2+dfsg-2build1_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/universe/d/dante/dante-server_1.4.2+dfsg-7build3.1_amd64.deb
 sudo dpkg -i dante-server_*.deb
 sudo useradd --shell /usr/sbin/nologin proxyuser
 echo "proxyuser:$password" | chpasswd
