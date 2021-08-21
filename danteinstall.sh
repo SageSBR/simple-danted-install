@@ -10,9 +10,9 @@ if [ "$#" -ne 1 ]; then
 fi
 
 apt update
-wget http://archive.ubuntu.com/ubuntu/pool/universe/d/dante/dante-server_1.4.2+dfsg-7build3.1_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/universe/d/dante/dante-server_1.4.2+dfsg-7build3.1.1_amd64.deb
 dpkg -i dante-server_*.deb
-useradd --shell /usr/sbin/nologin proxyuser
+useradd --shell /usr/sbin/nologin 4tunnel
 echo "proxyuser:$password" | chpasswd
 
 echo "Copy config to /etc/danted.conf ..."
